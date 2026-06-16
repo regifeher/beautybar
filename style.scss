@@ -1,0 +1,264 @@
+// -----------------------------
+// Variables
+// -----------------------------
+$primary-color: #d87093;
+$background-color: #f9f8f4;
+$white: #ffffff;
+$muted-text: #6c757d;
+$shadow-color: rgba(0, 0, 0, 0.1);
+
+// -----------------------------
+// Base
+// -----------------------------
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background-color !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.tableheader {
+  color: $primary-color !important;
+}
+
+// -----------------------------
+// Navbar
+// -----------------------------
+nav.navbar {
+  a.navbar-brand:hover {
+    color: $primary-color !important;
+  }
+}
+
+.fancy-link {
+  position: relative;
+  display: inline-block;
+  color: #000 !important;
+  text-decoration: none;
+
+  &.active {
+    color: black;
+    font-weight: bold;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 1.5px;
+    background: $primary-color !important;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+
+  &.hovered::after {
+    width: 110%;
+  }
+}
+
+@media (max-width: 990px) {
+  .navbar-nav .nav-link:hover {
+    color: $primary-color !important;
+  }
+
+  .fancy-link::after {
+    display: none;
+  }
+}
+
+// -----------------------------
+// Cards
+// -----------------------------
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  min-height: 100%;
+  background-color: $white;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px $shadow-color;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+
+  &-img-top {
+    height: 200px;
+    object-fit: cover;
+
+    @media (max-width: 990px) {
+      height: 150px;
+    }
+  }
+
+  &-body {
+    text-align: center;
+    flex-grow: 1;
+  }
+
+  &-text {
+    font-style: italic;
+  }
+
+  &-title {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  &-header {
+    color: $primary-color !important;
+  }
+}
+
+.text-muted {
+  font-size: 0.9em;
+  color: $muted-text;
+}
+
+// -----------------------------
+// Galéria
+// -----------------------------
+.kisKep {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 8px;
+  border: 2px solid $primary-color;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+}
+
+// -----------------------------
+// Felugró galéria
+// -----------------------------
+#felugro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  flex-direction: column;
+
+  img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px $white;
+  }
+
+  #zaras {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  #bal, #jobb {
+    position: absolute;
+    top: 50%;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    transform: translateY(-50%);
+  }
+
+  #bal {
+    left: 30px;
+  }
+
+  #jobb {
+    right: 30px;
+  }
+}
+
+// -----------------------------
+// Egyéb stílusok
+// -----------------------------
+.alahuzas {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 0.5px;
+}
+
+.bi-person,
+.bi-1-square-fill,
+.bi-2-square-fill,
+.bi-3-square-fill,
+.bi-4-square-fill {
+  color: $primary-color !important;
+}
+
+.btn-primary {
+  background-color: $primary-color !important;
+}
+
+.footerbg {
+  background-color: $primary-color;
+}
+
+.footericon {
+  color: #f8f9fa;
+  text-decoration: none;
+
+  &:hover {
+    color: rgba(196, 196, 196, 0.83);
+  }
+}
+
+.marka img {
+  opacity: 0.5;
+  transition: 0.3s;
+  filter: grayscale(100);
+  width: 80%;
+  margin: 0;
+  padding: 0;
+
+  &:hover {
+    filter: none;
+    opacity: 1;
+  }
+}
+#cookie-popup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050;
+  margin: 0;
+  display: none;
+  opacity: 0.9;
+}

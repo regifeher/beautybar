@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Bar</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/galeria.js"></script>
+    <script src="assets/js/kapcsolat.js"></script>
+    <script src="assets/js/cookie.js"></script>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+</head>
+<body>
+    <!--Navbar starts-->
+    <nav class="navbar navbar-expand-lg shadow-sm p-2 mb-3 bg-body-tertiary rounded-0 fixed-top">
+        <div class="container px-3">
+          <a class="navbar-brand ms-3 m-0 p-0" href="index.html"><img src="assets/img/logo.png" alt="Beauty Bar by Németh Szandi logó" height="56" id="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link me-4 fancy-link" href="#kezdolap">KEZDŐLAP</a>
+              <a class="nav-link me-4 fancy-link" href="#munkaim">MUNKÁIM</a>
+              <a class="nav-link me-4 fancy-link" href="#arak">ÁRAK</a>
+              <a class="nav-link fancy-link" href="#kapcsolat">KAPCSOLAT</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!--Navbar ends-->
+    <!--Header starts-->
+    <div class="container-fluid mx-0 px-0 shadow-sm mb-3" style="max-height: 695px; overflow: hidden;">
+      <img src="assets/img/header5.jpeg" alt="Fejléc" class="w-100 mx-0 px-0">
+    </div>
+    <!--Header ends-->
+    <!--Content starts-->
+    <!--Kezdolap starts-->
+    <div class="container px-3">
+      <div class="row p-3">
+        <div id="kezdolap" class="mb-4 pt-2"></div>
+        <h1 class="text-center mb-3">Üdvözlöm a Beauty Bar műköröm szalonban!</h1>
+        <h3 class="py-2 mb-4 text-center">A tökéletes műkörmös szolgáltatás minden alkalomra!</h3>
+        <p class="mb-3">Szeretettel köszöntöm a Beauty Bar műköröm szalonban, ahol egyedülálló műköröm szolgáltatásokat kínálok, hogy minden vendégem számára a legszebb körmöket varázsoljam. Ha Ön is a tökéletes körmöket keresi, akkor jó helyen jár! Legyen szó gél lakkról, műkörömről, manikűrről vagy bármilyen egyedi körömformáról, én személyesen biztosítom a legmagasabb szintű szolgáltatást minden alkalommal.</p>
+        <p class="mb-4">Mint egyetlen műkörmös szakember, minden egyes vendégemre maximális figyelmet fordítok, így biztosítva, hogy ne csak szép, de tartós körmöket is kapjon. Az általam használt prémium minőségű anyagok és a legújabb műköröm technikák garantálják, hogy Ön mindig a legmodernebb stílusokat viselje, miközben a körmei megőrzik szépségüket és tartósságukat.</p>
+        <h4 class="py-2 mb-3 text-center">Miért válasszon engem, mint műkörmöst?</h4>
+        <ul class="ps-4 mb-4">
+          <li><span class="alahuzas mb-2">Személyre szabott műköröm szolgáltatások</span>: Mivel egyedül dolgozom, minden vendégem számára egyedi, személyre szabott élményt kínálok. Legyen szó egy klasszikus francia manikűrről vagy egy kreatív, színes körömformáról, minden munkám teljesen az Ön ízlésére szabott.</li>
+          <li><span class="alahuzas mb-2">Prémium minőségű műköröm anyagok</span>: A legjobb minőségű anyagokkal dolgozom, így biztosítva, hogy körmei ne csak szépek, de hosszú távon tartósak és erősek legyenek. A gél lakk és a műköröm anyagok is csak a legmegbízhatóbb gyártóktól származnak.</li>
+          <li><span class="alahuzas mb-2">Modern műköröm technikák</span>: Munkám során mindig a legújabb trendeket és technikákat alkalmazom, hogy minden vendégem számára a legfrissebb és legdivatosabb körmöket készíthessem el. A körömdíszítés, mint például a 3D minták vagy csillogó kövek, mind elérhetők nálam!</li>
+          <li><span class="alahuzas mb-2">Higiéniai előírások betartása</span>: A legfontosabb számomra a vendégeim biztonsága és kényelme. Az összes szolgáltatást a legmagasabb higiéniai előírások szerint végzem, így Ön biztos lehet abban, hogy minden eszköz és felület tiszta és biztonságos.</li>
+        </ul>
+        <h4 class="py-2 mb-3 text-center">A szolgáltatásaim</h4>
+        <p class="mb-4">A Beauty Bar műköröm szalonban minden vendégem számára egyedi élményt kínálok. Akár az alap manikűr a cél, akár az extra műköröm díszítés vagy a különleges gél lakk szolgáltatás, nálam mindent megtalál, amire szüksége lehet.</p>
+        <div class="row gx-3 gy-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="card shadow-sm border-light h-100">
+                <div class="card-body">
+                    <i class="fs-1 bi bi-1-square-fill d-block mx-auto mb-3"></i>
+                    <h5 class="card-title mb-2">Körömgondozás</h5>
+                    <p class="card-text mb-0">A megfelelő körömgondozás elengedhetetlen a körmök egészségének megőrzéséhez. A szolgáltatásom során nemcsak a megjelenésüket, hanem a körmök erősségét is figyelembe veszem.</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card shadow-sm border-light h-100">
+                <div class="card-body">
+                    <i class="fs-1 bi bi-2-square-fill d-block mx-auto mb-3"></i>
+                    <h5 class="card-title mb-2">Gél lakk</h5>
+                    <p class="card-text mb-0">A gél lakk szolgáltatásaim tartós, szép fényű körmöket biztosítanak, amelyek akár 3 hétig is tökéletesen megmaradnak. Ideális választás azoknak, akik nem szeretnének állandóan a körmük karbantartásával foglalkozni.</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+          <div class="card shadow-sm border-light h-100">
+              <div class="card-body">
+                  <i class="fs-1 bi bi-3-square-fill d-block mx-auto mb-3"></i>
+                  <h5 class="card-title mb-2">Műköröm építés</h5>
+                  <p class="card-text mb-0">Klasszikus műköröm építése, amit tökéletes precizitással és egyedi dizájnnal készítek el. Az elkészített körmök természetesek, erősek és tartósak.</p>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card shadow-sm border-light mb-4 h-100">
+              <div class="card-body">
+                <i class="fs-1 bi bi-4-square-fill d-block mx-auto mb-3"></i>
+                  <h5 class="card-title mb-2">Körömdíszítés</h5>
+                  <p class="card-text mb-0">Ha valami egyedire vágyik, a különleges köröm díszítések között biztosan megtalálja a stílusához illő mintát. Legyen szó csillogó kövekről, ombré technikáról vagy bármilyen kreatív dizájnról, én segítek megvalósítani az elképzeléseit.</p>
+              </div>
+          </div>
+        </div>
+
+        </div>
+        <h4 class="py-3 text-center mb-4 mt-2">Hogyan foglalhat időpontot?</h4>
+        <p class="mb-3">A Beauty Bar-ba történő időpontfoglalás egyszerű és gyors. Egyszerűen hívjon engem vagy a kapcsolat menüpontban az űrlapot kitöltve, írjon e-mailben, és egyeztetjük a megfelelő időpontot. Az Ön kényelme a legfontosabb, így rugalmasan alkalmazkodom az Ön időbeosztásához.</p>
+        <p class="mb-4">Ne habozzon, lépjen be a Beauty Bar-ba, és tapasztalja meg, hogyan érhet el szép és tartós körmöket. Bízom benne, hogy mindent megadok, amire szüksége van ahhoz, hogy a legszebb változata legyen a saját körmeinek!</p>
+      </div>
+    </div>
+
+    <!-- Vélemények szekció -->
+    <div class="container py-3" id="velemenyek">
+      <h3 class="text-center mb-4">Vélemények</h3>
+      <div class="row gx-3 gy-4">
+          <!-- Vélemény 1 -->
+          <div class="col-md-4">
+              <div class="card shadow-sm border-light h-100">
+                  <div class="card-body text-center">
+                      <div class="mb-3">
+                      <i class="fs-1 bi bi-person text-center pt-2 d-block mx-auto mb-3"></i>
+                    </div>
+                      <p class="card-text mb-3">"Nagyon elégedett vagyok a szolgáltatással! A körmeim tökéletesek, és az egész élmény fantasztikus volt. Mindenkinek ajánlom!"</p>
+                      <h5 class="card-title">Kata Sz.</h5>
+                      <p class="text-muted">Körömdíszítés</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Vélemény 2 -->
+          <div class="col-md-4">
+              <div class="card shadow-sm border-light h-100">
+                  <div class="card-body text-center">
+                      <div class="mb-3">
+                      <i class="fs-1 bi bi-person text-center pt-2 d-block mx-auto mb-3"></i>
+                  </div>
+                      <p class="card-text mb-3">"Tökéletes szolgáltatás, nagyon precízen dolgozik. A gél lakkom több mint három hétig gyönyörű maradt!"</p>
+                      <h5 class="card-title">Anna K.</h5>
+                      <p class="text-muted">Gél lakk</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Vélemény 3 -->
+          <div class="col-md-4">
+              <div class="card shadow-sm border-light h-100">
+                  <div class="card-body text-center">
+                      <div class="mb-3">
+                      <i class="fs-1 bi bi-person text-center pt-2 d-block mx-auto mb-3"></i>
+                  </div>
+                      <p class="card-text mb-3">"A legjobb körömszalon, ahol valaha jártam! Kiváló minőség és barátságos légkör. Tökéletes élmény!"</p>
+                      <h5 class="card-title">Lilla T.</h5>
+                      <p class="text-muted">Műköröm építés</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- Vélemények szekció ends -->
+    <!--Kezdolap vege-->
+    <!--Munkaim starts-->
+    <div id="munkaim"></div>
+    <div class="container py-4 px-3">
+      <h1 class="text-center mb-4">Munkáim</h1>
+      <div class="galeria d-flex flex-wrap justify-content-center gx-2 gy-3"></div>
+    </div>
+
+    <div id="felugro" style="display: none;">
+      <span id="zaras">&times;</span>
+      <span id="bal">&#10094;</span>
+      <img id="nagyKep" src="">
+      <span id="jobb">&#10095;</span>
+    </div>
+    <!--Munkaim ends-->
+    <!--Árak starts-->
+    <div id="arak"></div>
+    <div class="container mt-3 py-4 px-3">
+    <h1 class="text-center mb-4">Árlista</h1>
+    
+    <div class="mb-4">
+      <h3 class="tableheader border-bottom pb-2">Manikűr</h3>
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between">
+          Hagyományos manikűr <span>3 000 Ft</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          Japán manikűr <span>3 500 Ft</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          Orosz manikűr <span>4 000 Ft</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mb-4">
+      <h3 class="tableheader border-bottom pb-2">Géllak + manikűr</h3>
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between">
+          Egyszínű géllak <span>6 500 Ft</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          Egyszínű géllak csere <span>7 000 Ft</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          Géllak eltávolítás <span>1 500 Ft</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mb-4">
+      <h3 class="tableheader border-bottom pb-2">Erősített géllak + manikűr</h3>
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between">
+          Egyszínű géllak <span>7 500 Ft</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          Egyszínű géllak csere: <span>8 000 Ft</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          Erősített géllak eltávolítás <span>2 000 Ft</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mb-4">
+      <h3 class="tableheader border-bottom pb-2">Műköröm + manikűr</h3>
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between">
+          S-es méret építés <span>8 500 Ft</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          S-es méret töltés <span>8 000 Ft</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          M-es méret építés <span>9 500 Ft</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          M-es méret töltés <span>9 000 Ft</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          L-es méret építés <span>10 500 Ft</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          L-es méret töltés <span>10 000 Ft</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          Eltávolítás <span>3 000 Ft</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mb-4">
+      <h3 class="tableheader border-bottom pb-2">Köröm javítás/pótlás</h3>
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between">
+          Javítás selyemszállal <span>300 Ft/köröm</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          Javítás/pótlás acryl géllel <span>500 Ft/köröm</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mb-4">
+      <h3 class="tableheader border-bottom pb-2">Díszítés</h3>
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between">
+          Kő/Szegecs/Gyöngy <span>50 Ft/db</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          Teli köves köröm <span>1000 Ft/köröm</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          Babyboomer/Francia <span>200 Ft/köröm</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          Egyéb díszítések <span>200 Ft/köröm</span>
+        </li>
+      </ul>
+    </div>
+
+    </div>
+  </div>
+    <!--Árak ends-->
+    <!--Kapcsolat starts-->
+    <div id="kapcsolat"></div>
+    <div class="container py-4 px-3 text-center">
+      <h1 class="mb-4 mt-3">Kapcsolat</h1>
+      <p class="mb-3">Ha szeretne időpontot foglalni vagy bármilyen kérdése van akkor írjon üzenetet vagy hívjon.</p>
+      <p class="mb-4">
+        <span class="alahuzas">E-mail</span>: szandi@beautybar.hu <br>
+        <span class="alahuzas">Telefonszám</span>: +36201234567 <br>
+        <span class="alahuzas">Cím</span>: 1046 Budapest, Szent Imre utca 1.
+     </p>
+      <h3 class=" my-4">Írjon nekem!</h3>
+        <form action="emailnekem.php" method="post" id="kapcsolatForm">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="name@example.com" required>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Miben segíthetek Önnek?" name="uzenet" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary border-0 w-25 py-3">Küldés</button>
+      </form>
+
+      <!--Visszajelzés-->
+      <div class="modal fade" id="uzenetModal" tabindex="-1" aria-labelledby="uzenetModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="uzenetModalLabel">Üzenetküldés eredménye</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Bezárás"></button>
+            </div>
+            <div class="modal-body" id="modalUzenetSzoveg">
+              <!-- Itt jelenik meg a válasz -->
+            </div>
+          </div>
+        </div>
+      </div>
+      </p>
+    </div>
+    <div class="container-fluid m-0 p-0">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2692.0683424206954!2d19.095135575883376!3d47.566458690749336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741da38a157fadd%3A0xfd3432826d88a8c3!2sBudapest%2C%20Szent%20Imre%20u.%201%2C%201046!5e0!3m2!1shu!2shu!4v1749140683083!5m2!1shu!2shu"  style="border:0; height: 500px; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!--Kapcsolat ends-->
+    <!--Márkák-->
+    <div class="container d-flex text-center my-5">
+      <div class="marka">
+        <img src="assets/img/logok/logo1.png" alt="">
+      </div>
+      <div class="marka mx-3">
+        <img src="assets/img/logok/logo2.png" alt="">
+      </div>
+      <div class="marka mx-3">
+        <img src="assets/img/logok/logo3.jpg" alt="">
+      </div>
+      <div class="marka mx-3">
+        <img src="assets/img/logok/logo4.png" alt="">
+      </div>
+      <div class="marka mx-3">
+        <img src="assets/img/logok/logo5.png" alt="">
+      </div>
+      <div class="marka">
+        <img src="assets/img/logok/logo6.png" alt="">
+      </div>
+    </div>
+    <!--Márkák ends-->
+    <!--Content ends-->
+    <!--Footer starts-->
+    <div class="container-fluid footerbg mt-3">
+      <div class="row text-center fs-6 p-3 text-light mb-0 pb-0">
+        <div class="col pt-2">
+        <p>&#169; 2025 Beauty Bar by Németh Szandi</p>
+        </div>
+      </div>
+      <div class="row text-center text-light fs-6 mt-0 pt-0 pb-2">
+        <div class="col">
+          <a href="https://www.instagram.com/szandi_nailart?igsh=ajR2eDYxMWx4d2lr" target="_blank" class="footericon d-inline me-2"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.facebook.com/szandinailart" target="_blank" class="footericon d-inline"><i class="bi bi-facebook"></i></a>
+        </div>
+      </div>
+      <div class="row text-center text-light fs-6 mt-0 pt-0 pb-4">
+        <div class="col">
+          <a href="adatkezelesi_minta.pdf" target="_blank" class="footericon d-inline me-2">Adatkezelési tájékozató</a>
+          <a href="aszf_minta.pdf" target="_blank" class="footericon d-inline me-2">Általános Szerződési Feltételek</i></a>
+          <a href="assets/img/hazirend.jpg" target="_blank" class="footericon d-inline">Házirend</i></a>
+        </div>
+      </div>
+    </div>
+    <!--Footer ends-->
+    <!--Up button-->
+    <a href="#kezdolap" class="btn btn-secondary position-fixed bottom-0 end-0 m-3 opacity-50"><i class="bi bi-chevron-double-up"></i></a>
+    <!--Up button ends-->
+</div>
+<!--Cookie pop-up-->    
+<div id="cookie-popup" class="bg-dark text-light text-center p-3">
+  <h4>Sütik (Cookies) használata</h4>
+  Weboldalunk sütiket használ a felhasználói élmény javítása érdekében. Ezek a kis adatfájlok segítenek nekünk megérteni, hogyan használod az oldalt, és személyre szabott tartalmat, valamint szolgáltatásokat nyújtanak. A weboldal további használatával hozzájárulsz a sütik használatához. <br>
+  <button id="closeBtn" class="btn btn-sm btn-primary border-0 ms-3 mt-3 px-3 py-2">Tudomásul vettem</button>
+</div>
+<!--Cookie pop-up ends-->
+</body>
+</html>
